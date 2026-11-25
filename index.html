@@ -15,10 +15,10 @@
 <div id="progress" aria-hidden="true"></div>
 
 <header class="topbar">
-  <a class="brand" href="#top"><span class="prompt">&gt;_</span> m.abdullah</a>
+  <a class="brand" href="#top">&lt;abdullah<span class="prompt">@</span>portfolio /&gt;</a>
   <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
   <nav id="nav">
-    <a href="#about">about</a><a href="#skills">skills</a><a href="#projects">projects</a><a href="#terminal">terminal</a><a href="#contact">contact</a>
+    <a href="#expertise">expertise</a><a href="#about">about</a><a href="#skills">skills</a><a href="#projects">projects</a><a href="#terminal">terminal</a><a href="#contact">contact</a>
   </nav>
 </header>
 
@@ -29,7 +29,7 @@
     <p class="typed-line">&gt; <span id="typed"></span><span class="cursor">&#9608;</span></p>
     <p class="sub">BE Information Security &middot; Semester 3 &middot; NUST, Rawalpindi</p>
     <div class="cta">
-      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn primary" href="#projects">View work</a>
       <a class="btn" href="#contact">Get in touch</a>
     </div>
     <div class="stats">
@@ -44,16 +44,33 @@
   </div>
 </section>
 
+<div class="ticker" aria-hidden="true"><div class="track">
+  <span>AWS</span><span>Networking</span><span>Linux</span><span>IAM</span><span>Python</span><span>Kubernetes</span><span>Incident response</span><span>Forensics</span><span>Git</span><span>AI automation</span>
+  <span>AWS</span><span>Networking</span><span>Linux</span><span>IAM</span><span>Python</span><span>Kubernetes</span><span>Incident response</span><span>Forensics</span><span>Git</span><span>AI automation</span>
+</div></div>
+
 <main>
+  <section id="expertise" class="reveal">
+    <h2><span>01</span> My expertise</h2>
+    <div class="expertise">
+      <div class="ex"><div class="ico">&#9729;</div><h3>Cloud &amp; Infrastructure</h3><p>Cloud security on AWS, Kubernetes basics, Linux administration and secure configuration of servers and services.</p></div>
+      <div class="ex"><div class="ico">&#8644;</div><h3>Networking</h3><p>Network fundamentals and traffic analysis, backed by Cisco Networking Basics and hands-on lab work.</p></div>
+      <div class="ex"><div class="ico">&#9919;</div><h3>Security &amp; Governance</h3><p>Identity and access management, auditing, incident response and digital forensics.</p></div>
+      <div class="ex"><div class="ico">&#9881;</div><h3>AI Automation</h3><p>Using Python and AI tools to automate repetitive security and infrastructure tasks.</p></div>
+    </div>
+  </section>
+
   <section id="about" class="reveal">
-    <h2><span>01</span> About me</h2>
-    <div class="panel">
-      <p>I am a BE Information Security student at NUST with a strong interest in infrastructure, networking and cloud. I like understanding how systems are built, how they connect, and how they can be secured, and I enjoy using AI tools to automate repetitive work. I hold the AWS Certified Cloud Practitioner credential and Cisco certifications in networking basics and cybersecurity. I have also worked on identity and access management, and I lead a team in capture-the-flag competitions, where we placed 162nd globally out of about 1,100 teams and first in Pakistan at Hi Cyber Con CTF 2026. I am looking for internships in cloud security and infrastructure.</p>
+    <h2><span>02</span> About me</h2>
+    <div class="panel about">
+      <p>I am a BE Information Security student at NUST with a strong interest in <b>infrastructure, networking and cloud</b>. I like understanding how systems are built, how they connect, and how they can be secured, and I enjoy using <b>AI tools to automate</b> repetitive work.</p>
+      <p>I hold the <b>AWS Certified Cloud Practitioner</b> credential and Cisco certifications in networking basics and cybersecurity. I have also worked on <b>identity and access management</b>, and I lead a team in capture-the-flag competitions, where we placed <b>162nd globally out of about 1,100 teams and first in Pakistan</b> at Hi Cyber Con CTF 2026.</p>
+      <p>I am looking for internships in <b>cloud security and infrastructure</b>.</p>
     </div>
   </section>
 
   <section id="skills" class="reveal">
-    <h2><span>02</span> Skills</h2>
+    <h2><span>03</span> Skills</h2>
     <div class="filters" role="group" aria-label="Skill filter">
       <button class="chip-btn active" data-f="all">all</button>
       <button class="chip-btn" data-f="cloud">cloud</button>
@@ -83,7 +100,7 @@
   </section>
 
   <section id="projects" class="reveal">
-    <h2><span>03</span> Projects &amp; labs</h2>
+    <h2><span>04</span> Projects &amp; labs</h2>
     <div class="cards">
       <article class="card" tabindex="0">
         <span class="badge">cloud &middot; python</span>
@@ -113,8 +130,15 @@
     </div>
   </section>
 
+  <section id="github" class="reveal">
+    <h2><span>05</span> GitHub contributions</h2>
+    <div class="panel gh">
+      <img id="ghchart" src="https://ghchart.rshah.org/38d6e8/Abdullah-in-cyber" alt="GitHub contribution graph for Abdullah-in-cyber" loading="lazy" onerror="this.closest('section').remove()">
+    </div>
+  </section>
+
   <section id="terminal" class="reveal">
-    <h2><span>04</span> Interactive terminal</h2>
+    <h2><span>06</span> Interactive terminal</h2>
     <div class="term" id="term">
       <div class="term-bar"><i></i><i></i><i></i><span>abdullah@portfolio: ~</span></div>
       <div class="term-body" id="out"></div>
@@ -127,7 +151,7 @@
   </section>
 
   <section id="contact" class="reveal">
-    <h2><span>05</span> Contact</h2>
+    <h2><span>07</span> Contact</h2>
     <div class="contact-grid">
       <a class="btn primary" href="https://github.com/Abdullah-in-cyber">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/muhammad-abdullah-102615388">LinkedIn</a>
@@ -135,7 +159,14 @@
     </div>
   </section>
 </main>
-<footer><p>&copy; 2026 Muhammad Abdullah &middot; built with HTML, CSS and a little JavaScript</p></footer>
+<footer>
+  <div class="social">
+    <a href="https://github.com/Abdullah-in-cyber" aria-label="GitHub"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+    <a href="https://www.linkedin.com/in/muhammad-abdullah-102615388" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+    <a href="mailto:abdullahatwork7@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M2 5h20v14H2V5zm2 2v.5l8 5 8-5V7H4zm16 3.3-8 5-8-5V17h16v-6.7z"/></svg></a>
+  </div>
+  <p>&copy; 2026 Muhammad Abdullah &middot; Built with code &amp; caffeine</p>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
