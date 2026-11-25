@@ -2,21 +2,6 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
 
-  // Subtle code-rain background
-  const cv = $('#bg'), cx = cv.getContext('2d'); let drops;
-  const glyphs = '01<>/{}[]#$%'.split('');
-  const fit = () => { cv.width = innerWidth; cv.height = innerHeight; drops = Array.from({ length: Math.floor(cv.width / 20) }, () => Math.random() * cv.height / 20); };
-  fit(); addEventListener('resize', fit);
-  if (!reduce) setInterval(() => {
-    cx.fillStyle = 'rgba(7,11,22,.14)'; cx.fillRect(0, 0, cv.width, cv.height);
-    cx.font = '14px JetBrains Mono, monospace';
-    drops.forEach((y, i) => {
-      cx.fillStyle = Math.random() > .97 ? '#38d6e8' : 'rgba(76,141,255,.35)';
-      cx.fillText(glyphs[Math.floor(Math.random() * glyphs.length)], i * 20, y * 20);
-      drops[i] = y * 20 > cv.height && Math.random() > .975 ? 0 : y + 1;
-    });
-  }, 80);
-
   // Typing effect
   const phrases = ['secure cloud infrastructure.', 'resilient networks.', 'automation with AI.', 'CTF solutions.'];
   const typed = $('#typed'); let p = 0, c = 0, del = false;
