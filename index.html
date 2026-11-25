@@ -5,153 +5,137 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Muhammad Abdullah | Cloud &amp; Infrastructure Security</title>
 <meta name="description" content="Portfolio of Muhammad Abdullah, BE Information Security student at NUST, interested in infrastructure, networking, cloud and AI automation.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="aurora" aria-hidden="true"></div>
-<div class="grid-bg" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
 <div id="progress" aria-hidden="true"></div>
 
 <header class="topbar">
-  <a class="brand" href="#top">&lt;abdullah<span>@</span>portfolio /&gt;</a>
+  <a class="brand" href="#top"><span class="prompt">&gt;_</span> m.abdullah</a>
   <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
   <nav id="nav">
-    <a href="#expertise">Expertise</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#credentials">Credentials</a><a href="#terminal">Terminal</a><a href="#contact" class="nav-cta">Contact</a>
+    <a href="#about">about</a><a href="#skills">skills</a><a href="#projects">projects</a><a href="#terminal">terminal</a><a href="#contact">contact</a>
   </nav>
 </header>
 
 <section class="hero" id="top">
   <div class="hero-text">
-    <p class="eyebrow"><span class="dot"></span> Available for internships</p>
-    <h1>Hi, I'm <span class="grad">Muhammad Abdullah.</span></h1>
-    <p class="role">I build and secure <span id="typed"></span><span class="cursor"></span></p>
-    <p class="lead">BE Information Security student at NUST (Semester 3) focused on cloud, infrastructure and networking, with a growing interest in AI automation.</p>
+    <p class="status"><span class="dot"></span> OPEN TO INTERNSHIPS</p>
+    <h1><span class="glitch" data-text="Muhammad Abdullah">Muhammad Abdullah</span></h1>
+    <p class="typed-line">&gt; <span id="typed"></span><span class="cursor">&#9608;</span></p>
+    <p class="sub">BE Information Security &middot; Semester 3 &middot; NUST, Rawalpindi</p>
     <div class="cta">
-      <a class="btn primary" href="#contact">Get in touch</a>
-      <a class="btn ghost" href="#projects">View work</a>
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn" href="#contact">Get in touch</a>
     </div>
     <div class="stats">
       <div><b data-count="49">0</b><span>CTF challenges solved</span></div>
-      <div><b data-count="1">0</b><span>rank in Pakistan, Hi Cyber Con 2026</span></div>
+      <div><b data-count="162">0</b><span>global CTF rank</span></div>
       <div><b data-count="4">0</b><span>certifications</span></div>
     </div>
   </div>
   <div class="hero-photo">
-    <div class="frame"><img src="avatar.jpg" alt="Photo of Muhammad Abdullah" width="320" height="320"></div>
-    <div class="float-card fc1"><small>currently</small>Cloud &amp; networking</div>
-    <div class="float-card fc2"><small>CTF</small>162nd of ~1,100 teams</div>
+    <div class="ring"><img src="avatar.jpg" alt="Photo of Muhammad Abdullah" width="260" height="260"></div>
+    <span class="tag t1">cloud</span><span class="tag t2">networking</span><span class="tag t3">AI</span>
   </div>
 </section>
 
-<div class="ticker" aria-hidden="true"><div class="track">
-  <span>AWS</span><span>Networking</span><span>Linux</span><span>IAM</span><span>Python</span><span>Kubernetes</span><span>Incident response</span><span>Forensics</span><span>Git</span><span>AI automation</span>
-  <span>AWS</span><span>Networking</span><span>Linux</span><span>IAM</span><span>Python</span><span>Kubernetes</span><span>Incident response</span><span>Forensics</span><span>Git</span><span>AI automation</span>
-</div></div>
-
 <main>
-  <section id="expertise" class="reveal">
-    <p class="kicker">What I do</p>
-    <h2>My expertise</h2>
-    <div class="expertise">
-      <div class="ex"><div class="ico">&#9729;</div><h3>Cloud &amp; Infrastructure</h3><p>Cloud security on AWS, Kubernetes basics, Linux administration and secure configuration of servers and services.</p></div>
-      <div class="ex"><div class="ico">&#8644;</div><h3>Networking</h3><p>Network fundamentals and traffic analysis, backed by Cisco Networking Basics and hands-on lab work.</p></div>
-      <div class="ex"><div class="ico">&#9919;</div><h3>Security &amp; Governance</h3><p>Identity and access management, auditing, incident response and digital forensics.</p></div>
-      <div class="ex"><div class="ico">&#9881;</div><h3>AI Automation</h3><p>Using Python and AI tools to automate repetitive security and infrastructure tasks.</p></div>
+  <section id="about" class="reveal">
+    <h2><span>01</span> About me</h2>
+    <div class="panel">
+      <p>I am a BE Information Security student at NUST with a strong interest in infrastructure, networking and cloud. I like understanding how systems are built, how they connect, and how they can be secured, and I enjoy using AI tools to automate repetitive work. I hold the AWS Certified Cloud Practitioner credential and Cisco certifications in networking basics and cybersecurity. I have also worked on identity and access management, and I lead a team in capture-the-flag competitions, where we placed 162nd globally out of about 1,100 teams and first in Pakistan at Hi Cyber Con CTF 2026. I am looking for internships in cloud security and infrastructure.</p>
     </div>
   </section>
 
-  <section id="about" class="reveal">
-    <p class="kicker">Background</p>
-    <h2>About me</h2>
-    <div class="about">
-      <p>I am a BE Information Security student at NUST with a strong interest in <b>infrastructure, networking and cloud</b>. I like understanding how systems are built, how they connect, and how they can be secured, and I enjoy using <b>AI tools to automate</b> repetitive work.</p>
-      <p>I hold the <b>AWS Certified Cloud Practitioner</b> credential and Cisco certifications in networking basics and cybersecurity. I have also worked on <b>identity and access management</b>, and I lead a team in capture-the-flag competitions, where we placed <b>162nd globally out of about 1,100 teams and first in Pakistan</b> at Hi Cyber Con CTF 2026.</p>
-      <p>I am looking for internships in <b>cloud security and infrastructure</b>.</p>
+  <section id="skills" class="reveal">
+    <h2><span>02</span> Skills</h2>
+    <div class="filters" role="group" aria-label="Skill filter">
+      <button class="chip-btn active" data-f="all">all</button>
+      <button class="chip-btn" data-f="cloud">cloud</button>
+      <button class="chip-btn" data-f="network">network</button>
+      <button class="chip-btn" data-f="security">security</button>
+      <button class="chip-btn" data-f="dev">dev &amp; AI</button>
+    </div>
+    <div class="skill-grid">
+      <div class="skill" data-c="cloud"><span>Cloud security (AWS)</span><i style="--w:75%"></i></div>
+      <div class="skill" data-c="network"><span>Networking</span><i style="--w:75%"></i></div>
+      <div class="skill" data-c="security"><span>Identity &amp; Access Management</span><i style="--w:70%"></i></div>
+      <div class="skill" data-c="security"><span>Incident response</span><i style="--w:65%"></i></div>
+      <div class="skill" data-c="security"><span>Digital forensics (Autopsy)</span><i style="--w:65%"></i></div>
+      <div class="skill" data-c="cloud"><span>Kubernetes</span><i style="--w:55%"></i></div>
+      <div class="skill" data-c="dev"><span>Linux &amp; command line</span><i style="--w:75%"></i></div>
+      <div class="skill" data-c="dev"><span>Python</span><i style="--w:65%"></i></div>
+      <div class="skill" data-c="dev"><span>Git &amp; GitHub</span><i style="--w:70%"></i></div>
+      <div class="skill" data-c="dev"><span>AI automation</span><i style="--w:70%"></i></div>
+    </div>
+    <h3 class="sub-h">Certifications</h3>
+    <div class="certs">
+      <div class="cert"><b>AWS</b> Certified Cloud Practitioner</div>
+      <div class="cert"><b>CCEP</b> Red Team Leaders &middot; Jan 2026</div>
+      <div class="cert"><b>Cisco</b> Networking Basics &middot; Jan 2026</div>
+      <div class="cert"><b>Cisco</b> Introduction to Cybersecurity &middot; Jan 2026</div>
     </div>
   </section>
 
   <section id="projects" class="reveal">
-    <p class="kicker">Selected work</p>
-    <h2>Projects &amp; labs</h2>
-    <div class="filters" role="group" aria-label="Project filter">
-      <button class="chip-btn active" data-f="all">All</button>
-      <button class="chip-btn" data-f="cloud">Cloud</button>
-      <button class="chip-btn" data-f="security">Security</button>
-      <button class="chip-btn" data-f="web">Web</button>
-    </div>
+    <h2><span>03</span> Projects &amp; labs</h2>
     <div class="cards">
-      <article class="card" data-c="cloud security">
-        <span class="badge">Cloud &middot; Python</span>
+      <article class="card" tabindex="0">
+        <span class="badge">cloud &middot; python</span>
         <h3>Cloud Security Misconfiguration Checker</h3>
         <p>Python tool that scans cloud security group rules and flags public exposure such as open SSH or RDP ports.</p>
       </article>
-      <article class="card" data-c="web">
-        <span class="badge">Web &middot; Lab</span>
+      <article class="card" tabindex="0">
+        <span class="badge">web &middot; lab</span>
         <h3>WordPress CMS Deployment</h3>
         <p>Installed and configured WordPress on a local XAMPP stack to learn how web server, PHP and database fit together.</p>
       </article>
-      <article class="card" data-c="security">
-        <span class="badge">Forensics</span>
+      <article class="card" tabindex="0">
+        <span class="badge">forensics</span>
         <h3>Autopsy USB Investigation</h3>
         <p>Analysed a USB image in Autopsy and produced a forensic report for an insider-data case.</p>
       </article>
-      <article class="card" data-c="security">
-        <span class="badge">IAM</span>
+      <article class="card" tabindex="0">
+        <span class="badge">iam</span>
         <h3>Enterprise Identity Governance</h3>
         <p>Worked on an IGA platform covering identity lifecycle, access control and auditing.</p>
       </article>
-      <article class="card" data-c="security">
-        <span class="badge">CTF</span>
+      <article class="card" tabindex="0">
+        <span class="badge">ctf</span>
         <h3>Hi Cyber Con CTF 2026</h3>
         <p>Led team The Arachnid Sentries: 49 of 69 challenges solved, 162nd globally and 1st in Pakistan.</p>
       </article>
     </div>
   </section>
 
-  <section id="credentials" class="reveal">
-    <p class="kicker">Learning</p>
-    <h2>Credentials</h2>
-    <div class="certs">
-      <div class="cert"><b>AWS</b>Certified Cloud Practitioner</div>
-      <div class="cert"><b>Red Team Leaders</b>CCEP &middot; Jan 2026</div>
-      <div class="cert"><b>Cisco</b>Networking Basics &middot; Jan 2026</div>
-      <div class="cert"><b>Cisco</b>Introduction to Cybersecurity &middot; Jan 2026</div>
-    </div>
-  </section>
-
-  <section id="github" class="reveal">
-    <p class="kicker">Open source</p>
-    <h2>On GitHub</h2>
-    <div class="cards" id="repos"><p class="muted">Loading repositories&hellip;</p></div>
-  </section>
-
   <section id="terminal" class="reveal">
-    <p class="kicker">For fun</p>
-    <h2>Interactive terminal</h2>
+    <h2><span>04</span> Interactive terminal</h2>
     <div class="term" id="term">
       <div class="term-bar"><i></i><i></i><i></i><span>abdullah@portfolio: ~</span></div>
       <div class="term-body" id="out"></div>
       <form class="term-in" id="form" autocomplete="off">
-        <label for="cmd">$</label>
-        <input id="cmd" spellcheck="false" aria-label="terminal command" placeholder="type help">
+        <label for="cmd">abdullah@portfolio:~$</label>
+        <input id="cmd" spellcheck="false" aria-label="terminal command">
       </form>
     </div>
+    <p class="hint">Try: <code>help</code> &middot; <code>whoami</code> &middot; <code>skills</code> &middot; <code>certs</code> &middot; <code>ctf</code> &middot; <code>contact</code></p>
   </section>
 
   <section id="contact" class="reveal">
-    <div class="contact-box">
-      <h2>Let's work together</h2>
-      <p>I'm looking for internships in cloud security and infrastructure. Reach out on any channel below.</p>
-      <div class="contact-grid">
-        <a class="btn primary" href="mailto:abdullahatwork7@gmail.com">Email me</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/muhammad-abdullah-102615388">LinkedIn</a>
-        <a class="btn ghost" href="https://github.com/Abdullah-in-cyber">GitHub</a>
-      </div>
+    <h2><span>05</span> Contact</h2>
+    <div class="contact-grid">
+      <a class="btn primary" href="https://github.com/Abdullah-in-cyber">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/muhammad-abdullah-102615388">LinkedIn</a>
+      <a class="btn" href="mailto:abdullahatwork7@gmail.com">abdullahatwork7@gmail.com</a>
     </div>
   </section>
 </main>
-<footer><p>&copy; 2026 Muhammad Abdullah &middot; Rawalpindi, Pakistan</p></footer>
+<footer><p>&copy; 2026 Muhammad Abdullah &middot; built with HTML, CSS and a little JavaScript</p></footer>
 <script src="script.js"></script>
 </body>
 </html>
